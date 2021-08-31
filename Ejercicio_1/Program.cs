@@ -33,7 +33,7 @@ namespace CalculoFactorial
             int fact = 1;
             for (int i = 1; i <= n; i++)
             {
-                fact *= i;
+                fact = fact * i;
             }
             Console.WriteLine("\nEl Factorial de " + n + " es: " + fact);
         }
