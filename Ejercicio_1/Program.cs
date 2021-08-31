@@ -16,8 +16,10 @@ namespace CalculoFactorial
             {
                 Console.Write("Por favor Digite un número entero positivo: ");
                 num = int.Parse(Console.ReadLine());
+                //metodo para verificar si es entero positivo
                 verificar(num);
             } while (num < 0);
+            //metodo para calcular factorial
             factorial(num);
             Console.ReadKey();
         }
@@ -31,6 +33,7 @@ namespace CalculoFactorial
         static void factorial(int n)
         {
             int fact = 1;
+            //aumenta la variable i hasta llegar a n, mientras se multiplica a si misma
             for (int i = 1; i <= n; i++)
             {
                 fact = fact * i;
