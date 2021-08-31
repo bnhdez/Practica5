@@ -21,7 +21,6 @@ namespace CalculoFactorial
             } while (num < 0);
             //metodo para calcular factorial
             factorial(num);
-            Console.ReadKey();
         }
         static void verificar(int n)
         {
