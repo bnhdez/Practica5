@@ -8,22 +8,22 @@ namespace ejer_2
     {
         static void Main(string[] args)
         {
-            byte K, SW;
+            int intentos = 0, verif = 0;
             string pass;
-            SW = 0; K = 0;
             do
             {
                 Console.Write("DIGITE CLAVE: "); pass = Console.ReadLine();
                 if (pass == "contra123")
                 {
-                    SW = 1;
+                    verif = 1;
                 }
                 else
                 {
-                    K++;
+                    intentos++;
                 }
-            } while (((K < 3) & (SW == 0)));
-            if (SW == 1)
+            //aumentara el numero de intentos si no es correcta la contraseña
+            } while (((intentos < 3) & (verif == 0)));
+            if (verif == 1)
             {
                 Console.WriteLine("BIENVENIDO ");
             }
